@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Montserrat|Noto+Sans|Roboto+Slab');
+//variables
+$font-lato: 'Lato',
+sans-serif;
+$font-monserrat: 'Montserrat',
+sans-serif;
+$font-roboto: 'Roboto Slab',
+serif;
+$font-noto: 'Noto Sans',
+sans-serif;
 * {
 	margin: 0;
 	padding: 0;
@@ -28,7 +38,6 @@ body {
 
 .navigation {
 	background: #ffffff;
-	outline: 1px red solid;
 	display: flex;
 	flex-direction: row;
 	height: 150px;
@@ -36,7 +45,6 @@ body {
 }
 
 .logo-container {
-	outline: 3px black solid;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -45,7 +53,6 @@ body {
 }
 
 .nav {
-	outline: 3px black solid;
 	height: 100%;
 	width: 40%;
 	display: flex;
@@ -58,31 +65,29 @@ body {
 		text-decoration: none;
 		list-style: none;
 		text-transform: uppercase;
-		
-		&:first-child{
-			a{
-				color:red;
+		&:first-child {
+			a {
+				color: red;
 			}
 		}
-		
 		a {
 			text-decoration: none;
 			color: #202242;
-			
 		}
 	}
 }
 
 .contact {
-	outline: 1px black solid;
 	display: flex;
 	height: 100%;
 	width: 33%;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	border-left: 1px solid #ebebeb;
 	h1 {
 		font-size: 0.8rem;
+		color: #202242;
 	}
 	.contact-half {
 		width: 100%;
@@ -100,6 +105,84 @@ body {
 			a {
 				text-decoration: none;
 				font-size: 1.2rem;
+			}
+		}
+		h2 {
+			margin-left: 40px;
+			border-left: 1px solid #babbc4;
+			padding-left: 40px;
+			line-height: 50px;
+		}
+	}
+}
+
+.header-content {
+	height: 80%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	//text area
+	.header-text {
+		height: 70%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		h1 {
+			color: white;
+			font-family: $font-monserrat;
+			font-size: 2.4rem;
+			letter-spacing: 2px;
+			margin-top: 3%;
+		}
+		p {
+			color: white;
+			font-family: $font-lato;
+			letter-spacing: 1.8px;
+			font-size: 1.5rem;
+			margin-top: 3%;
+		}
+		img {
+			margin-top: 3%;
+			height: 130px;
+			width: 130px;
+		}
+	}
+	.domain-choose {
+		height: 30%;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		
+		//form
+		form {
+			height: 60px;
+			width: 540px;
+			display: flex;
+			flex-direction: row;
+			outline: 20px solid #dddddd;
+			input{
+				width: 50%;
+			}
+			select{
+				width: 20%;
+				background: #ffe13e;
+				color: #8f8135;
+				text-align-last:center;
+				
+			}
+			button{
+				width:30%;
+				background: #ffe13e;
+				color: white;
+				outline: 0;
+				border: 0;
+				text-align: center;
 			}
 		}
 	}
