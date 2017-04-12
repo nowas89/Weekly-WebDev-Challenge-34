@@ -283,3 +283,38 @@ body {
   height: 600px;
   width: 100%;
   background: #ffffff; }
+  .clients .clients-half {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50%;
+    width: 100%; }
+    .clients .clients-half .our-clients {
+      height: 100%;
+      width: 30%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .clients .clients-half .our-clients h1 {
+        color: #202242;
+        font-family: "Roboto Slab", serif;
+        font-size: 2rem;
+        margin-bottom: 30px; }
+      .clients .clients-half .our-clients p {
+        width: 70%;
+        font-family: "Lato", sans-serif;
+        font-size: 1rem;
+        color: #202242;
+        text-align: center; }
+  .clients .clients-logo {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    flex-wrap: wrap; }
+    .clients .clients-logo img {
+      width: 175px;
+      height: 115px; }
