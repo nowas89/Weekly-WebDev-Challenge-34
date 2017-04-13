@@ -12,36 +12,37 @@
 <body>
     <div class="wrapper">
         <section class="header">
-            <nav class="navigation">
-                <div class="logo-container"> <span class="logo"><img src="img/logo.png" alt="logo detabase"></span> </div>
-                <div class="nav">
-                    <ul class="nav-list">
-                        <li><a href="#">home</a></li>
-                        <li><a href="#">about</a></li>
-                        <li><a href="#">pricing</a></li>
-                        <li><a href="#">domain</a></li>
-                        <li><a href="#">hosting</a></li>
+            <nav class="header__navigation">
+                <div class="header__logo"> <span class="logo"><img src="img/logo.png" alt="logo detabase"></span> </div>
+                <div class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class='nav__list'><a href="#">home</a></li>
+                        <li class='nav__list'><a href="#">about</a></li>
+                        <li class='nav__list'><a href="#">pricing</a></li>
+                        <li class='nav__list'><a href="#">domain</a></li>
+                        <li class='nav__list'><a href="#">hosting</a></li>
                     </ul>
                 </div>
-                <div class="contact"> <span class="contact-half">
-				<h1>Do you need help? Just Email Live chat or Call us</h1>
+                <div class="contact"> 
+                <span class="contact__half">
+				<h1 class="contact__title">Do you need help? Just Email Live chat or Call us</h1>
 				</span>
-                    <span class="contact-half">
-						<button><a href="#">Live Chat</a></button>
-						<h2>6284-6534</h2> 
+                    <span class="contact__half">
+						<button class="btn"><a href="#">Live Chat</a></button>
+						<h2 class="contact__number">6284-6534</h2> 
 					</span>
                 </div>
             </nav>
-            <div class="header-content">
-                <div class="header-text">
-                    <h1>Just a Proffesional Web Hosting Services</h1>
-                    <p>modern - fast - reliable</p>
+            <div class="header__content">
+                <div class="header__text">
+                    <h1 class="header__article">Just a Proffesional Web Hosting Services</h1>
+                    <p class="header__description">modern - fast - reliable</p>
                     <img src="img/react.png" alt="image of reaction with atom">
                 </div>
-                <div class="domain-choose">
+                <div class="domain__choose">
 
 
-                    <form>
+                    <form class="domain__form">
 
                         <input type="text" name="domain" placeholder="Your Domain Name ..." required="">
                         <select type="text" name="domain" required="" placeholder=".com">
@@ -49,7 +50,7 @@
 							<option value="domain-co-uk">.co.uk</option>
 							<option value="domain-pl">.pl</option>
 						</select>
-                        <button type="submit" class=".button-avilability">Check Availability</button>
+                        <button type="submit" class="domain__btn">Check Availability</button>
 
                     </form>
 
@@ -58,63 +59,58 @@
         </section>
         <!--		about section         -->
         <section class="about" id="about">
-            <div class="webhost-container">
+            <div class="about__webhost">
                 <img src="img/about-webhost.png" alt="web host server image">
-                <h1>#1 Webhost Services</h1>
-                <span>
-		        <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
+                <h1 class="webhost__header">#1 Webhost Services</h1>
+		        <p class="webhost__description">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. </p>
     
-</span>
-                
-                <button type="submit">MORE</button>
+                <button class="webhost_btn" type="submit">MORE</button>
             </div>
-            <div class="domain-container">
-                <h2>.com</h2>
-                <h1>#1 Webhost Services</h1>
-                <span><p>This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-
-                    </p></span>
-                <button type="submit">MORE</button>
-
+            <div class="domain__container">
+                <h2 class="domain__logo">.com</h2>
+                <h1 class="domain__title" >#1 Webhost Services</h1>
+               <p class="domain_discription">This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
+                    </p>
+                <button class="domain_btn" type="submit">MORE</button>
             </div>
         </section>
 <!--        features             -->
         <section class="features" id="features">
-        <div class="features-content">
-           <div class="features-logo">
-               <h1>Our Features</h1>
-               <h2>Our Best Features</h2>
+        <div class="features__content">
+           <div class="features__logo">
+               <h1 class="features__title" >Our Features</h1>
+               <h2 class="features__description">Our Best Features</h2>
            </div>
-            <div class="features-products">
-                <div class="products-container">
+            <div class="features__products">
+                <div class="products__container">
                    <img src="img/features-1.png" alt="">
-                    <span></span>
-                    <h1>Live Support</h1>
-                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                    <span class="line__separator"></span>
+                    <h1 class='product__title' >Live Support</h1>
+                    <p class="product__discription">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
                     </p>
                 </div>
 <!--                2-->
-              <div class="products-container">
+              <div class="features__products">
                    <img src="img/features2.png" alt="">
-                    <span></span>
-                    <h1>Live Support</h1>
-                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                     <span class="line__separator"></span>
+                    <h1 class='product__title' >Live Support</h1>
+                    <p class="product__discription">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
                     </p>
                 </div>
 <!--                3-->
-              <div class="products-container">
+              <div class="features__products">
                    <img src="img/features3.png" alt="">
-                    <span></span>
-                    <h1>Live Support</h1>
-                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                     <span class="line__separator"></span>
+                    <h1 class='product__title' >Live Support</h1>
+                    <p class="product__discription">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
                     </p>
                 </div>
 <!--                4-->
-              <div class="products-container">
+              <div class="features__products">
                    <img src="img/features4.png" alt="">
-                    <span></span>
-                    <h1>Live Support</h1>
-                    <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
+                     <span class="line__separator"></span>
+                    <h1 class='product__title' >Live Support</h1>
+                    <p class="product__discription">This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. 
                     </p>
                 </div>
                
@@ -127,14 +123,14 @@
 </section>
 <!--       clients-->
        <section class="clients" id="clients">
-           <div class="clients-half">
-               <div class="our-clients">
-               	<h1>Our Clients</h1>
-               	<p>
+           <div class="clients__half">
+               <div class="our__clients">
+               	<h1 class="clients__title">Our Clients</h1>
+               	<p clients__discription>
                		This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum.
                	</p>
                </div>
-               <div class="clients-logo">
+               <div class="clients__logo">
                	<img src="img/x-logo.png" alt="">
                	<img src="img/u-logo.png" alt="">
                	<img src="img/tree-logo.png" alt="">
@@ -142,7 +138,7 @@
                </div>
                
            </div>
-           <div class="comments-half">
+           <div class="comments__half">
                
            </div>
 
