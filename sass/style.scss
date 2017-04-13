@@ -376,47 +376,4 @@ body {
 	height: 600px;
 	width: 100%;
 	background: #ffffff;
-	.clients-half{
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		height: 50%;
-		width: 100%;
-		.our-clients{
-			height: 100%;
-			width: 30%;
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
-			h1{
-				color: #202242;
-				font-family: $font-roboto;
-				font-size: 2rem;
-				margin-bottom: 30px;
-			}
-			p{
-				width: 70%;
-				font-family: $font-lato;
-				font-size: 1rem;
-				color: #202242;
-				text-align: center;
-			}
-		}
-	}
-	.clients-logo{
-		height: 100%;
-		width: 70%;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		padding: 40px;
-		flex-wrap: wrap;
-		
-		img{
-			width: 175px;
-			height: 115px;
-			
-		}
-	}
 }
