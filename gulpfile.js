@@ -1,11 +1,18 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var webserver = require('gulp-webserver');
+var autoprefixer = require('gulp-autoprefixer');
+
+
+var autoprefixerOptions = {
+  browsers: ['last 2 versions', '> 5%', 'Firefox ESR']
+};
 
 //sass
 gulp.task('sass', function(){
 	return gulp.src('sass/*.scss')
 	.pipe(sass())
+	.pipe(autoprefixer(autoprefixerOptions))
 	.pipe(gulp.dest('main/css'))
 	
 });
