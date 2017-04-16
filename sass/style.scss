@@ -286,7 +286,10 @@ body {
 	.features-content {
 		height: 100%;
 		width: 100%;
-		background: #fbf8f1;
+		background-image: url('../img/features.png');
+		background-attachment: fixed;
+		background-position: center;
+		background-size: cover;
 		.features-logo {
 			height: 30%;
 			width: 100%;
@@ -393,13 +396,13 @@ body {
 		}
 	}
 	.clients__secondhalf {
-		outline: 1px red dashed;
 		height: 50%;
 		width: 100%;
 		display: flex;
-			flex-direction: row;
-			
-			align-items: center;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap;
 		.clients__comment {
 			height: 180px;
 			width: 370px;
@@ -407,7 +410,6 @@ body {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			outline: 1px black solid;
 			background: #faf9f9;
 			position: relative;
 			.comment__descrtiption {
@@ -417,17 +419,187 @@ body {
 				height: 70%;
 				width: 80%;
 			}
-			h1{
+			h1 {
 				font-family: $font-monserrat;
-	
-				float: left;
+				color: #696969;
+				position: absolute;
+				bottom: 20px;
+				left: 20px;
+				font-size: 1.2rem;
 			}
-			.comment__avatar{
+			p {
+				height: 60%;
+				width: 80%;
+				color: #a4a4a4;
+				font-family: $font-noto;
+				font-size: 0.8rem;
+			}
+			.comment__avatar {
 				height: 100px;
 				width: 100px;
 				position: absolute;
 				bottom: -50px;
 				right: 25px;
+				border: 3px #e2e1e5 solid;
+				border-radius: 50%;
+			}
+		}
+	}
+}
+
+.pricing__container {
+	height: 280px;
+	width: 100%;
+	background: #202242;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	.pricing__description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		width: 65%;
+		span {
+			height: 100%;
+			width: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			h1 {
+				color: white;
+				font-family: $font-lato;
+				font-size: 1.6rem;
+				letter-spacing: 2px;
+			}
+			p {
+				color: #595a70;
+				font-family: $font-roboto;
+				font-size: 0.8rem;
+			}
+		}
+	}
+	.pircing__button {
+		width: 35%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		button {
+			height: 85px;
+			width: 230px;
+			color: #3e3b41;
+			font-size: 1.3rem;
+			background: #ffe13e;
+			border: 4px white solid;
+			cursor: pointer;
+		}
+	}
+}
+
+.footer {
+	height: 680px;
+	width: 100%;
+	background: #353255;
+	display: flex;
+	flex-direction: row;
+	.footer__layout {
+		height: 100%;
+		width: 75%;
+		background-attachment: fixed;
+		background-image: url('../img/1.png');
+		background-repeat: no-repeat;
+		background-position: bottom left;
+		position: relative;
+		.footer__description {
+			height: 100px;
+			width: 400px;
+			position: absolute;
+			left: 50%;
+			bottom: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			h1 {
+				font-size: 0.7rem;
+				color: #bebebe;
+				font-family: $font-noto;
+				font-weight: 200;
+				margin-top: 15px;
+			}
+			img {
+				height: 30px;
+				width: 30px;
+			}
+		}
+	}
+	.footer__navigation {
+		width: 25%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 30px 80px 0 0;
+		
+		.footer__navlist {
+			width: 80%;
+			height: 60%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-end;
+			list-style: none;
+			h1 {
+				color: white;
+				font-family: $font-monserrat;
+				font-size: 2rem;
+				padding-bottom: 80px;
+				font-weight: 100;
+			}
+			a {
+				color: white;
+				text-decoration: none;
+				font-family: $font-lato;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+			span {
+				width: 70px;
+				height: 1px;
+				background: #565870;
+				margin: 10px 0 10px 0;
+			}
+		}
+		.social__icons {
+			height: 60px;
+			width: 50%;
+			display: flex;
+			justify-content: space-around;
+			align-items: flex-end;
+			.fa {
+				color: #ffe13e;
+				font-size: 1.4rem;
+				cursor: pointer;
+			}
+		}
+		.footer__scrollTop {
+
+			height: 90px;
+			width: 60%;
+			display: flex;
+			justify-content: flex-end;
+			align-items: flex-end;
+			
+			a {
+				font-size: 0.7rem;
+				color: white;
+				font-family: $font-lato;
+				opacity: 0.4;
+				cursor: pointer;
+				text-decoration: none;
 			}
 		}
 	}
